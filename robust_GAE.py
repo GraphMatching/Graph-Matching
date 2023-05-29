@@ -1,6 +1,5 @@
 from algorithm import *
 from model import *
-import matplotlib.pyplot as plt
 import torch
 import numpy as np
 import scipy.sparse as sp
@@ -11,7 +10,6 @@ import networkx as nx
 import os.path as osp
 from scipy.sparse import coo_matrix
 from tqdm import tqdm
-import dgl
 import random
 import warnings
 from torch.optim import Adam
