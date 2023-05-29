@@ -1,0 +1,7 @@
+numpy
+scipy
+pickle
+netrd
+networkx
+tqdm
+munkres
