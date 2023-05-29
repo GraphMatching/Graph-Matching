@@ -1,4 +1,4 @@
-#Network Alignment with Transferable Graph Autoencoders
+# Network Alignment with Transferable Graph Autoencoders
 
 This repository contains the implementation for the T-GAE framework for graph matching proposed in the paper "Network Alignment with Transferable Graph Autoencoders". 
 
