@@ -1,1 +1,1 @@
-Code base for the Nuerips 2023 Submission "Network Alignment with Transferable Graph Autoencoders"
+Code base for the ICLR 2024 Submission "Network Alignment with Transferable Graph Autoencoders"
