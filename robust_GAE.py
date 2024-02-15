@@ -298,14 +298,19 @@ def test_matching(GAE, S_hat_samples, p_samples, S_hat_features, S_emb, device):
 
 def load_adj(dataset):
     if (dataset == "celegans"):
-        #size = 453
         S = torch.load("data/celegans.pt")
     elif (dataset == "arena"):
-        #size = 1135
         S = torch.load("data/arena.pt")
     elif (dataset == "douban"):
-        #size = 3906
         S = torch.load("data/douban.pt")
+    elif(dataset == "Online"):
+        S = torch.load("data/online.pt")
+    elif(dataset == "Offline"):
+        S = torch.load("data/offline.pt")
+    elif (dataset == "ACM"):
+        S = torch.load("data/ACM.pt")
+    elif (dataset == "DBLP"):
+        S = torch.load("data/DBLP.pt")
     else:
         filepath = "data/" + dataset + ".npz"
         loader = load_npz(filepath)
