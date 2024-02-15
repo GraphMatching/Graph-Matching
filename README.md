@@ -1,6 +1,6 @@
 # Network Alignment with Transferable Graph Autoencoders
 
-This repository contains the implementation for the T-GAE framework for graph matching proposed in the paper "Network Alignment with Transferable Graph Autoencoders". 
+This repository is a temporary code base to reproduce the experiment for the T-GAE graph matching framework proposed in the paper "Network Alignment with Transferable Graph Autoencoders". 
 
 Please change parameters in the args.py file, the current settings are default to be specific experiment on Celegans. To run the experiments in Section 5.3, the probability_model should be "uniform", and to run the experiments in the Appendix, please change it to "degree". 
 
