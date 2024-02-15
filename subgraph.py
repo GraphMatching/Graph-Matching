@@ -5,7 +5,7 @@ from model import *
 import args
 
 def load_douban():
-	x = loadmat("/home/jason/GraphMatching/walign/data/final/douban.mat")
+	x = loadmat("/data/douban.mat")
 	return (x['online_edge_label'][0][1],
 			x['online_node_label'],
 			x['offline_edge_label'][0][1],
@@ -154,7 +154,7 @@ if __name__ =="__main__":
         train_set = ["ACM", "DBLP"]
         test_set = ["ACM_DBLP"]
         input_dim = 17
-        b = np.load('/home/jason/GraphMatching/DCSNA-main/ACM-DBLP.npz')
+        b = np.load('/data/ACM-DBLP.npz')
         train_features["ACM"] = [torch.from_numpy(b["x1"]).float()]
         train_features["DBLP"] = [torch.from_numpy(b["x2"]).float()]
         test_pairs = b['test_pairs'].astype(np.int32)
@@ -215,11 +215,11 @@ if __name__ =="__main__":
 
     print("Results for " + data)
     if(data == "ACM_DBLP"):
-        S1 = torch.load("/home/jason/GraphMatching/datas/ACM.pt")
-        S2 = torch.load("/home/jason/GraphMatching/datas/DBLP.pt")
+        S1 = torch.load("/data/ACM.pt")
+        S2 = torch.load("/data/DBLP.pt")
     elif(data == "douban_real"):
-        S1 = torch.load("/home/jason/GraphMatching/datas/online.pt")
-        S2 = torch.load("/home/jason/GraphMatching/datas/offline.pt")
+        S1 = torch.load("/data/online.pt")
+        S2 = torch.load("/data/offline.pt")
     print("Generating S1,S2 embedding")
 
     adj_S1 = coo_matrix(S1.numpy())
